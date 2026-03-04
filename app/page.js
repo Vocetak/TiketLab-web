@@ -1,14 +1,22 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white flex flex-col items-center justify-center px-6 py-10">
-      {/* Nadpis TiketLab nahoře */}
-      <h1 className="text-4xl md:text-6xl font-extrabold mb-4 text-center">
-        <span className="text-cyan-300">Tiket</span>
-        <span className="text-white">Lab</span>
-      </h1>
-
-      {/* Logo pod nápisem */}
-<img src="/logo.png" alt="tiketlab logo" style={{ width: '150px', height: 'auto' }} />
+      
+      {/* Header sekce – logo + název */}
+      <div className="flex flex-col items-center space-y-8 mb-12">
+        {/* Logo – široké stejně jako text TiketLab */}
+        <img 
+          src="/logo.png" 
+          alt="TiketLab" 
+          className="w-[320px] h-auto max-w-full mx-auto drop-shadow-2xl"  // 320px, responzivní, stín
+        />
+        
+        {/* Nadpis TiketLab – větší */}
+        <h1 className="text-5xl md:text-7xl font-extrabold mb-0 text-center">
+          <span className="text-cyan-300">Tiket</span>
+          <span className="text-white">Lab</span>
+        </h1>
+      </div>
 
       {/* Tři kroky – velká čísla + jemná animace na hover */}
       <div className="w-full max-w-3xl grid md:grid-cols-3 gap-6 mb-10">
