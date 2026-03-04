@@ -1,2 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig
+const nextConfig = {
+  images: {
+    unoptimized: true  // vypne optimalizaci, která dělá problémy
+  }
+}
+
+module.exports = nextConfig

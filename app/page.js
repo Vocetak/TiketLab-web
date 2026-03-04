@@ -8,11 +8,7 @@ export default function Home() {
       </h1>
 
       {/* Logo pod nápisem */}
-      <img
-        src="/images/logo.png"
-        alt="TiketLab"
-        className="w-56 md:w-72 mb-10 drop-shadow-2xl"
-      />
+<img src="/logo.png" alt="tiketlab logo" style={{ width: '150px', height: 'auto' }} />
 
       {/* Tři kroky – velká čísla + jemná animace na hover */}
       <div className="w-full max-w-3xl grid md:grid-cols-3 gap-6 mb-10">
