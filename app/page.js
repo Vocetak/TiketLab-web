@@ -4,6 +4,16 @@ export default function Home() {
       
       {/* Header sekce – logo + název */}
       <div className="flex flex-col items-center space-y-8 mb-12">
+        
+        {/* Nadpis TiketLab – větší */}
+        <h1 className="text-5xl md:text-7xl font-extrabold mb-0 text-center">
+          <span className="text-cyan-300">Tiket</span>
+          <span className="text-white">Lab</span>
+        </h1>
+        
+        
+        
+        
         {/* Logo – široké stejně jako text TiketLab */}
         <img 
           src="/logo.png" 
@@ -11,11 +21,6 @@ export default function Home() {
           className="w-[320px] h-auto max-w-full mx-auto drop-shadow-2xl"  // 320px, responzivní, stín
         />
         
-        {/* Nadpis TiketLab – větší */}
-        <h1 className="text-5xl md:text-7xl font-extrabold mb-0 text-center">
-          <span className="text-cyan-300">Tiket</span>
-          <span className="text-white">Lab</span>
-        </h1>
       </div>
 
       {/* Tři kroky – velká čísla + jemná animace na hover */}
